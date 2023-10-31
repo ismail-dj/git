@@ -1,0 +1,21 @@
+img {
+    border: 5px solid #555;
+  }
+
+body {
+    background-color: black;
+  }
+
+pre {
+  float: right;
+  margin-right: 400px;
+  color: whitesmoke;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ul {
+  float: right;
+  margin-right: 400px;
+  color: whitesmoke;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
