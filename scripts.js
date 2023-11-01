@@ -15,6 +15,8 @@ const laptopPre = document.getElementById("laptoptext");
 
 const tvPre = document.getElementById("tvtext");
 
+const hamperPre = document.getElementById("hampertext");
+
 let currentIndex = 0;
 
 gifList = [];
@@ -68,6 +70,7 @@ function setSpawn() {
     homePre.style.display = "inline";
     laptopPre.style.display = "none";
     tvPre.style.display = "none";
+    hamperPre.style.display = "none";
 }
 
 laptopButton.addEventListener("click", function () {
@@ -110,6 +113,7 @@ hamperButton.addEventListener("click", function () {
     changeScene();
 
     homePre.style.display = "none";
+    hamperPre.style.display = "inline";
     
     laptopButton.style.display = "none";
     hamperButton.style.display = "none";

@@ -17,6 +17,11 @@ ul {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+iframe {
+  float: right;
+  margin-right: 400px;
+}
+
 a {
   color: rgba(255, 255, 255, 0.71);
 }
