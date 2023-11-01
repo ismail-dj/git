@@ -11,6 +11,10 @@ const tellyButton = document.getElementById("tellybutton");
 
 const homePre = document.getElementById("spawntext");
 
+const laptopPre = document.getElementById("laptoptext");
+
+const tvPre = document.getElementById("tvtext");
+
 let currentIndex = 0;
 
 gifList = [];
@@ -62,6 +66,8 @@ function setTelly() {
 function setSpawn() {
     gifElement.src = "roomgifs/spawn.gif";
     homePre.style.display = "inline";
+    laptopPre.style.display = "none";
+    tvPre.style.display = "none";
 }
 
 laptopButton.addEventListener("click", function () {
@@ -69,11 +75,15 @@ laptopButton.addEventListener("click", function () {
     changeScene();
 
     homePre.style.display = "none";
+    tvPre.style.display = "none";
+
     laptopButton.style.display = "none";
     hamperButton.style.display = "none";
     tellyButton.style.display = "none";
 
     resetButton.style.display = "inline";
+    laptopPre.style.display = "inline";
+
     if (currentIndex <= gifList.length - 2) {
         setTimeout(changeScene, 996); 
     }
@@ -83,11 +93,13 @@ tellyButton.addEventListener("click", function () {
     setTelly();
     changeScene();
 
+    homePre.style.display = "none";
     laptopButton.style.display = "none";
     hamperButton.style.display = "none";
     tellyButton.style.display = "none";
 
     resetButton.style.display = "inline";
+    tvPre.style.display = "inline";
     if (currentIndex <= gifList.length - 2) {
         setTimeout(changeScene, 996); 
     }
@@ -97,6 +109,8 @@ hamperButton.addEventListener("click", function () {
     setHamper();
     changeScene();
 
+    homePre.style.display = "none";
+    
     laptopButton.style.display = "none";
     hamperButton.style.display = "none";
     tellyButton.style.display = "none";
@@ -119,6 +133,3 @@ resetButton.addEventListener("click", function() {
     reset();
     
 })
-
-// Add a click event listener to the button
-//laptopButton.addEventListener("click", changetoLaptop);

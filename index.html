@@ -4,24 +4,32 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$100 room</title>
+    <title>Ismail Project 1</title>
 </head>
 <body>
 
     <pre id="spawntext">Welcome to my virtual room!</pre>
-    <ul>
+    <ul id="laptoptext" style="display: none;">Weeklies:<br>
         <li><a href="weeklies/weeklyb.html">weekly b</a></li>
-        <li><a href="weeklies/weeklyc.html"></a>weekly c</li>
-        <li><a href="weeklies/weeklyd.html"></a>weekly d</li>
-        <li><a href="weeklies/weeklye.html"></a>weekly e</li>
+        <li><a href="weeklies/weeklyc.html">weekly c</a></li>
+        <li><a href="weeklies/weeklyd.html">weekly d</a></li>
+        <li><a href="weeklies/weeklye.html">weekly e</a></li>
     </ul>
-    <img id="current" src="roomgifs/spawn.gif" alt="Picture of My Room">
 
-    <button id="laptopbutton" style="display: inline;">Go To Laptop</button>
-    <button id="hamperbutton" style="display: inline;">Go To Hamper</button>
-    <button id="tellybutton" style="display: inline;">Go To TV</button>
+    <ul id="tvtext" style="display: none;">Exercises<br>
+        <li><a href="excercises/5variations/index.html">5 variations</a></li>
+        <li><a href="excercises/hypertext/index.html">hypertext</a></li>
+    </ul>
 
-    <button id="resetbutton" style="display: none;">Go Back</button>
+
+    <img id="current" src="roomgifs/spawn.gif" style="border: 5px solid #555;" alt="Picture of My Room">
+    <br>
+
+    <button id="laptopbutton" style="display: inline;"><img src="buttongifs/laptop.gif" alt="go to laptop"></button>
+    <button id="tellybutton" style="display: inline;"><img src="buttongifs/tv.gif" alt="go to tv on shelf"></button>
+    <button id="hamperbutton" style="display: inline;"><img src="buttongifs/hamper.gif" alt="go to hamper"></button>
+
+    <button id="resetbutton" style="display: none;"><img src="buttongifs/back.gif" alt="go back to start"></button>
 
     <script src="scripts.js"></script>
 
